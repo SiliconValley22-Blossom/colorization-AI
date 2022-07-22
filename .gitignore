@@ -450,4 +450,5 @@ $RECYCLE.BIN/
 /config/s3Config.py
 /.idea
 
+.DS_Store
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,python,flask,pycharm,visualstudiocode
