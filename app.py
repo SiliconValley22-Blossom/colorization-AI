@@ -10,6 +10,10 @@ app = Flask(__name__)
 gen = generate(pretrained=True).eval()
 
 
+@app.route("/", methods=['get'])
+def test():
+    return "hello"
+
 @app.route('/image', methods=['post'])
 def post_image():  # put application's code here
     file = request.files['file']
