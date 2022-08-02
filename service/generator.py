@@ -101,6 +101,6 @@ def generate(pretrained=True):
     model = Generator()
     if pretrained:
         model.load_state_dict(
-            model_zoo.load_url('https://colorizers.s3.us-east-2.amazonaws.com/colorization_release_v2-9b330a0b.pth',
+            model_zoo.load_url('https://blossom-s3-test.s3.ap-northeast-2.amazonaws.com/color_train.pth',
                                map_location='cpu', check_hash=True))
     return model
